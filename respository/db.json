@@ -1,0 +1,1460 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Pizza Palace",
+      "description": "Authentic Italian pizza and pasta",
+      "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400",
+      "address": "123 Main St, City",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "rating": 4.5,
+      "reviewCount": 150,
+      "categories": [
+        "Italian",
+        "Pizza",
+        "Pasta"
+      ],
+      "phoneNumber": "+1234567890",
+      "isOpen": true,
+      "deliveryTime": 30,
+      "deliveryFee": 2.99,
+      "minimumOrder": 15,
+      "createdAt": "2023-01-15T10:00:00Z",
+      "updatedAt": "2024-10-12T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Burger House",
+      "description": "Gourmet burgers and fries",
+      "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+      "address": "456 Oak St, City",
+      "latitude": 37.7849,
+      "longitude": -122.4294,
+      "rating": 4.2,
+      "reviewCount": 89,
+      "categories": [
+        "American",
+        "Burgers",
+        "Fast Food"
+      ],
+      "phoneNumber": "+1234567891",
+      "isOpen": true,
+      "deliveryTime": 25,
+      "deliveryFee": 1.99,
+      "minimumOrder": 12,
+      "createdAt": "2023-02-10T09:00:00Z",
+      "updatedAt": "2024-10-12T09:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Sushi Zen",
+      "description": "Fresh sushi and Japanese cuisine",
+      "imageUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400",
+      "address": "789 Pine St, City",
+      "latitude": 37.7949,
+      "longitude": -122.4394,
+      "rating": 4.8,
+      "reviewCount": 234,
+      "categories": [
+        "Japanese",
+        "Sushi",
+        "Soups"
+      ],
+      "phoneNumber": "+1234567892",
+      "isOpen": true,
+      "deliveryTime": 40,
+      "deliveryFee": 3.99,
+      "minimumOrder": 20,
+      "createdAt": "2023-03-05T11:00:00Z",
+      "updatedAt": "2024-10-12T11:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Cambodia Spice",
+      "description": "Authentic Cambodia cuisine with bold flavors",
+      "imageUrl": "https://images.unsplash.com/photo-1559314809-0f31657def5e?w=400",
+      "address": "321 Elm St, City",
+      "latitude": 37.7649,
+      "longitude": -122.4094,
+      "rating": 4.6,
+      "reviewCount": 178,
+      "categories": [
+        "Cambodia",
+        "Soups",
+        "Spicy"
+      ],
+      "phoneNumber": "+1234567893",
+      "isOpen": true,
+      "deliveryTime": 35,
+      "deliveryFee": 2.49,
+      "minimumOrder": 18,
+      "createdAt": "2023-04-20T12:00:00Z",
+      "updatedAt": "2024-10-12T12:00:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Mediterranean Delight",
+      "description": "Fresh Mediterranean dishes and mezze",
+      "imageUrl": "https://images.unsplash.com/photo-1544961503-7ad532b6e1e1?w=400",
+      "address": "654 Cedar St, City",
+      "latitude": 37.7549,
+      "longitude": -122.3994,
+      "rating": 4.7,
+      "reviewCount": 203,
+      "categories": [
+        "Mediterranean",
+        "Healthy",
+        "Vegetarian"
+      ],
+      "phoneNumber": "+1234567894",
+      "isOpen": false,
+      "deliveryTime": 45,
+      "deliveryFee": 3.49,
+      "minimumOrder": 22,
+      "createdAt": "2023-05-15T13:00:00Z",
+      "updatedAt": "2024-10-12T13:00:00Z"
+    }
+  ],
+  "foodItems": [
+    {
+      "id": "1",
+      "name": "Margherita Pizza",
+      "description": "Classic pizza with tomato sauce, mozzarella, and basil",
+      "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400",
+      "price": 14.99,
+      "category": "Pizza",
+      "restaurantId": "1",
+      "isAvailable": true,
+      "ingredients": [
+        "Tomato sauce",
+        "Mozzarella",
+        "Basil",
+        "Olive oil"
+      ],
+      "isVegetarian": true,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.6,
+      "reviewCount": 45,
+      "calories": 280,
+      "preparationTime": 15
+    },
+    {
+      "id": "2",
+      "name": "Pepperoni Pizza",
+      "description": "Traditional pizza with pepperoni and cheese",
+      "imageUrl": "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400",
+      "price": 16.99,
+      "category": "Pizza",
+      "restaurantId": "1",
+      "isAvailable": true,
+      "ingredients": [
+        "Tomato sauce",
+        "Mozzarella",
+        "Pepperoni"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.7,
+      "reviewCount": 62,
+      "calories": 320,
+      "preparationTime": 15
+    },
+    {
+      "id": "3",
+      "name": "Quattro Stagioni",
+      "description": "Four seasons pizza with ham, mushrooms, artichokes, and olives",
+      "imageUrl": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=400",
+      "price": 18.99,
+      "category": "Pizza",
+      "restaurantId": "1",
+      "isAvailable": true,
+      "ingredients": [
+        "Tomato sauce",
+        "Mozzarella",
+        "Ham",
+        "Mushrooms",
+        "Artichokes",
+        "Olives"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.8,
+      "reviewCount": 38,
+      "calories": 350,
+      "preparationTime": 18
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Carbonara",
+      "description": "Creamy pasta with bacon, eggs, and parmesan",
+      "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400",
+      "price": 13.99,
+      "category": "Pasta",
+      "restaurantId": "1",
+      "isAvailable": true,
+      "ingredients": [
+        "Spaghetti",
+        "Bacon",
+        "Eggs",
+        "Parmesan",
+        "Black pepper"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.5,
+      "reviewCount": 29,
+      "calories": 420,
+      "preparationTime": 12
+    },
+    {
+      "id": "5",
+      "name": "Classic Cheeseburger",
+      "description": "Beef patty with cheese, lettuce, tomato, and onions",
+      "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400",
+      "price": 12.99,
+      "category": "Burgers",
+      "restaurantId": "2",
+      "isAvailable": true,
+      "ingredients": [
+        "Beef patty",
+        "Cheese",
+        "Lettuce",
+        "Tomato",
+        "Onions",
+        "Bun"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.4,
+      "reviewCount": 28,
+      "calories": 580,
+      "preparationTime": 10
+    },
+    {
+      "id": "6",
+      "name": "Veggie Burger",
+      "description": "Plant-based patty with fresh vegetables",
+      "imageUrl": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400",
+      "price": 11.99,
+      "category": "Burgers",
+      "restaurantId": "2",
+      "isAvailable": true,
+      "ingredients": [
+        "Plant-based patty",
+        "Lettuce",
+        "Tomato",
+        "Avocado",
+        "Bun"
+      ],
+      "isVegetarian": true,
+      "isVegan": true,
+      "isSpicy": false,
+      "rating": 4.1,
+      "reviewCount": 15,
+      "calories": 450,
+      "preparationTime": 8
+    },
+    {
+      "id": "7",
+      "name": "BBQ Bacon Burger",
+      "description": "Beef patty with BBQ sauce, bacon, and crispy onions",
+      "imageUrl": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400",
+      "price": 15.99,
+      "category": "Burgers",
+      "restaurantId": "2",
+      "isAvailable": true,
+      "ingredients": [
+        "Beef patty",
+        "BBQ sauce",
+        "Bacon",
+        "Crispy onions",
+        "Cheese",
+        "Bun"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.6,
+      "reviewCount": 42,
+      "calories": 680,
+      "preparationTime": 12
+    },
+    {
+      "id": "8",
+      "name": "French Fries",
+      "description": "Crispy golden french fries",
+      "imageUrl": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400",
+      "price": 4.99,
+      "category": "Sides",
+      "restaurantId": "2",
+      "isAvailable": true,
+      "ingredients": [
+        "Potatoes",
+        "Salt"
+      ],
+      "isVegetarian": true,
+      "isVegan": true,
+      "isSpicy": false,
+      "rating": 4.3,
+      "reviewCount": 67,
+      "calories": 220,
+      "preparationTime": 5
+    },
+    {
+      "id": "9",
+      "name": "Salmon Roll",
+      "description": "Fresh salmon with avocado and cucumber",
+      "imageUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400",
+      "price": 8.99,
+      "category": "Sushi",
+      "restaurantId": "3",
+      "isAvailable": true,
+      "ingredients": [
+        "Salmon",
+        "Avocado",
+        "Cucumber",
+        "Rice",
+        "Nori"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.9,
+      "reviewCount": 87,
+      "calories": 180,
+      "preparationTime": 8
+    },
+    {
+      "id": "10",
+      "name": "Spicy Tuna Roll",
+      "description": "Spicy tuna with cucumber and spicy mayo",
+      "imageUrl": "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=400",
+      "price": 9.99,
+      "category": "Sushi",
+      "restaurantId": "3",
+      "isAvailable": true,
+      "ingredients": [
+        "Tuna",
+        "Spicy mayo",
+        "Cucumber",
+        "Rice",
+        "Nori"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": true,
+      "rating": 4.7,
+      "reviewCount": 53,
+      "calories": 200,
+      "preparationTime": 8
+    },
+    {
+      "id": "11",
+      "name": "California Roll",
+      "description": "Crab, avocado, and cucumber roll",
+      "imageUrl": "https://images.unsplash.com/photo-1611599113148-cd67ebeeded9?w=400",
+      "price": 7.99,
+      "category": "Sushi",
+      "restaurantId": "3",
+      "isAvailable": true,
+      "ingredients": [
+        "Crab meat",
+        "Avocado",
+        "Cucumber",
+        "Rice",
+        "Nori"
+      ],
+      "isVegetarian": false,
+      "isVegan": false,
+      "isSpicy": false,
+      "rating": 4.5,
+      "reviewCount": 74,
+      "calories": 160,
+      "preparationTime": 6
+    },
+    {
+      "id": "12",
+      "name": "Miso Soup",
+      "description": "Traditional Japanese soup with tofu and seaweed",
+      "imageUrl": "https://images.unsplash.com/photo-1607301405390-d4c8a4da0b56?w=400",
+      "price": 3.99,
+      "category": "Soups",
+      "restaurantId": "3",
+      "isAvailable": true,
+      "ingredients": [
+        "Miso paste",
+        "Tofu",
+        "Seaweed",
+        "Green onions"
+      ],
+      "isVegetarian": true,
+      "isVegan": true,
+      "isSpicy": false,
+      "rating": 4.4,
+      "reviewCount": 31,
+      "calories": 80,
+      "preparationTime": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_1",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": "Extra basil please"
+        }
+      ],
+      "subtotal": 14.99,
+      "deliveryFee": 2.99,
+      "tax": 1.2,
+      "total": 19.18,
+      "status": "delivered",
+      "createdAt": "2024-10-10T18:30:00Z",
+      "estimatedDeliveryTime": "2024-10-10T19:00:00Z",
+      "actualDeliveryTime": "2024-10-10T18:58:00Z",
+      "deliveryAddress": "123 Customer St, City",
+      "specialInstructions": "Ring doorbell twice",
+      "driverId": "driver_001",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Credit Card",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "c68892b5-30a7-479e-9574-3b2c1419ae4f",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 4,
+          "totalPrice": 55.96,
+          "specialInstructions": "asdfsdf"
+        }
+      ],
+      "subtotal": 55.96,
+      "deliveryFee": 2.99,
+      "tax": 4.4768,
+      "total": 63.4268,
+      "status": "pending",
+      "createdAt": "2025-10-12T14:49:36.932479",
+      "estimatedDeliveryTime": "2025-10-12T15:19:36.932597",
+      "deliveryAddress": "123 Main Street, City, State 12345",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "1134855d-be0c-4683-8d62-cb427f971e45",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 4,
+          "totalPrice": 55.96,
+          "specialInstructions": "asdfsdf"
+        }
+      ],
+      "subtotal": 55.96,
+      "deliveryFee": 2.99,
+      "tax": 4.4768,
+      "total": 63.4268,
+      "status": "pending",
+      "createdAt": "2025-10-12T14:49:42.490037",
+      "estimatedDeliveryTime": "2025-10-12T15:19:42.490072",
+      "deliveryAddress": "123 Main Street, City, State 12345",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "4e5e97fb-af34-4eb9-a15d-fd0b52dc4429",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 2,
+          "totalPrice": 27.98,
+          "specialInstructions": "asdfsdf"
+        }
+      ],
+      "subtotal": 27.98,
+      "deliveryFee": 2.99,
+      "tax": 2.2384,
+      "total": 33.2084,
+      "status": "pending",
+      "createdAt": "2025-10-12T15:01:24.657926",
+      "estimatedDeliveryTime": "2025-10-12T15:31:24.657973",
+      "deliveryAddress": "940 Maple Lane, Sunnyvale, CA 94185",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "7bfa064e-15c3-4b52-b4f6-12364c45a76d",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        }
+      ],
+      "subtotal": 41.97,
+      "deliveryFee": 2.99,
+      "tax": 3.3576,
+      "total": 48.3176,
+      "status": "pending",
+      "createdAt": "2025-10-12T17:08:20.834108",
+      "estimatedDeliveryTime": "2025-10-12T17:38:20.834167",
+      "deliveryAddress": "416 Oak Avenue, Oakland, CA 94190",
+      "specialInstructions": "I want very hot food",
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "e7825f7f-3cdd-4293-8c81-ebb0e006cde0",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T20:29:08.608966",
+      "estimatedDeliveryTime": "2025-10-18T20:59:08.609029",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "53cf891f-9cc6-4489-bf6a-c7556701efa8",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T20:29:20.489169",
+      "estimatedDeliveryTime": "2025-10-18T20:59:20.489206",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "test-123",
+      "restaurantId": "1",
+      "restaurantName": "Test Restaurant",
+      "items": [
+        {
+          "id": "1",
+          "name": "Test Item",
+          "price": 10.99,
+          "quantity": 1,
+          "totalPrice": 10.99
+        }
+      ],
+      "subtotal": 10.99,
+      "deliveryFee": 2.99,
+      "tax": 0.88,
+      "total": 14.86,
+      "status": "pending",
+      "createdAt": "2025-10-18T20:30:00.000Z",
+      "deliveryAddress": "123 Test Street",
+      "paymentMethod": "Test",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "f33f5a2e-8511-4cf3-8a0c-0171a74e57a5",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T20:42:56.946129",
+      "estimatedDeliveryTime": "2025-10-18T21:12:56.946191",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "09788202-7959-43e4-8896-cc2ee46f6403",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T20:55:47.897623",
+      "estimatedDeliveryTime": "2025-10-18T21:25:47.897665",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "3bbde0d5-19b8-4dcf-b4d3-939f3e4567bc",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T21:06:11.019729",
+      "estimatedDeliveryTime": "2025-10-18T21:36:11.019758",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "81f39d4d-8da1-400a-8ee8-ce0b46600d7e",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T21:06:45.297501",
+      "estimatedDeliveryTime": "2025-10-18T21:36:45.297541",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "b61ce85b-6482-48ad-8bf2-5e9ac801ddac",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pending",
+      "createdAt": "2025-10-18T21:06:57.054950",
+      "estimatedDeliveryTime": "2025-10-18T21:36:57.054977",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "0cbb36c7-d76b-45af-88fe-fe492c281a0b",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "4",
+          "name": "Spaghetti Carbonara",
+          "price": 13.99,
+          "quantity": 3,
+          "totalPrice": 41.97,
+          "specialInstructions": "asdfsdf"
+        },
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 1,
+          "totalPrice": 14.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 56.96,
+      "deliveryFee": 2.99,
+      "tax": 4.5568,
+      "total": 64.5068,
+      "status": "pickedUp",
+      "createdAt": "2025-10-18T21:19:00.493315",
+      "estimatedDeliveryTime": "2025-10-18T21:49:00.493363",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_51f17642",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "d7a363cc-def7-4be1-aece-d577ada9edee",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "preparing",
+      "createdAt": "2025-10-18T21:48:21.650940",
+      "estimatedDeliveryTime": "2025-10-18T22:18:21.650980",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "851b4dd5-9c70-4777-ba90-2f71671addf5",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "pickedUp",
+      "createdAt": "2025-10-18T21:54:45.910014",
+      "estimatedDeliveryTime": "2025-10-18T22:24:45.910066",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_acaaaaf1",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "a53a859c-2106-4d73-ae16-1b2ef1f7e57a",
+      "restaurantId": "3",
+      "restaurantName": "Sushi Zen",
+      "items": [
+        {
+          "id": "11",
+          "name": "California Roll",
+          "price": 7.99,
+          "quantity": 1,
+          "totalPrice": 7.99,
+          "specialInstructions": null
+        },
+        {
+          "id": "9",
+          "name": "Salmon Roll",
+          "price": 8.99,
+          "quantity": 2,
+          "totalPrice": 17.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 25.97,
+      "deliveryFee": 2.99,
+      "tax": 2.0776,
+      "total": 31.0376,
+      "status": "pickedUp",
+      "createdAt": "2025-10-18T22:02:34.110921",
+      "estimatedDeliveryTime": "2025-10-18T22:32:34.110973",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "73f15d24-229d-4407-95f9-d70dba6b71f3",
+      "restaurantId": "2",
+      "restaurantName": "Burger House",
+      "items": [
+        {
+          "id": "5",
+          "name": "Classic Cheeseburger",
+          "price": 12.99,
+          "quantity": 3,
+          "totalPrice": 38.97,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 38.97,
+      "deliveryFee": 2.99,
+      "tax": 3.1176,
+      "total": 45.077600000000004,
+      "status": "preparing",
+      "createdAt": "2025-10-18T22:24:40.331138",
+      "estimatedDeliveryTime": "2025-10-18T22:54:40.331204",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "4e236734-0edd-450b-b966-86b72a977dce",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "confirmed",
+      "createdAt": "2025-10-18T22:25:56.317828",
+      "estimatedDeliveryTime": "2025-10-18T22:55:56.317881",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "3c36267c-e529-453b-80e4-febdeb7f2045",
+      "restaurantId": "2",
+      "restaurantName": "Burger House",
+      "items": [
+        {
+          "id": "7",
+          "name": "BBQ Bacon Burger",
+          "price": 15.99,
+          "quantity": 1,
+          "totalPrice": 15.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 15.99,
+      "deliveryFee": 2.99,
+      "tax": 1.2792000000000001,
+      "total": 20.2592,
+      "status": "pickedUp",
+      "createdAt": "2025-10-19T09:56:17.326348",
+      "estimatedDeliveryTime": "2025-10-19T10:26:17.326403",
+      "deliveryAddress": "4964 Birch Way, Sunnyvale, CA 94175",
+      "specialInstructions": "I want the spicy burger",
+      "driverId": "driver_ecfaceb3",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "6095b24f-0601-4dec-aae7-139e9986e691",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "pickedUp",
+      "createdAt": "2025-10-19T09:58:14.305676",
+      "estimatedDeliveryTime": "2025-10-19T10:28:14.305732",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_02119388",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Mastercard ending in 5678",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "699dbac7-1c52-43a6-96dc-645ee5b7d2e0",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "pickedUp",
+      "createdAt": "2025-10-19T09:58:34.341821",
+      "estimatedDeliveryTime": "2025-10-19T10:28:34.341871",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_33efc5a5",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "2b6e7226-a397-4839-94a0-f43959a32c13",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": "ka"
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:09:15.635688",
+      "estimatedDeliveryTime": "2025-10-19T10:39:15.635724",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "4957a2a3-6e13-48f4-a634-8fd6ffaddadf",
+      "restaurantId": "3",
+      "restaurantName": "Sushi Zen",
+      "items": [
+        {
+          "id": "12",
+          "name": "Miso Soup",
+          "price": 3.99,
+          "quantity": 6,
+          "totalPrice": 23.94,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 23.94,
+      "deliveryFee": 2.99,
+      "tax": 1.9152000000000002,
+      "total": 28.8452,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:19:10.499882",
+      "estimatedDeliveryTime": "2025-10-19T10:49:10.499938",
+      "deliveryAddress": "6839 Elm Drive, Fremont, CA 94176",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "b540ca9b-d2a7-407a-8265-35d5544bf17f",
+      "restaurantId": "3",
+      "restaurantName": "Sushi Zen",
+      "items": [
+        {
+          "id": "9",
+          "name": "Salmon Roll",
+          "price": 8.99,
+          "quantity": 3,
+          "totalPrice": 26.97,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 26.97,
+      "deliveryFee": 2.99,
+      "tax": 2.1576,
+      "total": 32.1176,
+      "status": "confirmed",
+      "createdAt": "2025-10-19T10:21:38.358557",
+      "estimatedDeliveryTime": "2025-10-19T10:51:38.358593",
+      "deliveryAddress": "2688 Cherry Boulevard, Palo Alto, CA 94183",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "d11dfe8d-e216-44c1-9368-f531da0f7ebe",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 4,
+          "totalPrice": 59.96,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 59.96,
+      "deliveryFee": 2.99,
+      "tax": 4.7968,
+      "total": 67.74680000000001,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:22:32.380201",
+      "estimatedDeliveryTime": "2025-10-19T10:52:32.380263",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_10902a1d",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "c60abc7c-2979-4a67-960e-97e0ac47f1b0",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 4,
+          "totalPrice": 59.96,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 59.96,
+      "deliveryFee": 2.99,
+      "tax": 4.7968,
+      "total": 67.74680000000001,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:23:18.960830",
+      "estimatedDeliveryTime": "2025-10-19T10:53:18.960877",
+      "deliveryAddress": "9485 Cherry Boulevard, Mountain View, CA 94174",
+      "specialInstructions": null,
+      "driverId": "driver_93ae38a3",
+      "driverName": "John Driver",
+      "driverPhone": "+1234567890",
+      "driverLatitude": 37.7749,
+      "driverLongitude": -122.4194,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "65e41ea3-5dd5-4c7c-913c-fde6ce7cb984",
+      "restaurantId": "2",
+      "restaurantName": "Burger House",
+      "items": [
+        {
+          "id": "5",
+          "name": "Classic Cheeseburger",
+          "price": 12.99,
+          "quantity": 1,
+          "totalPrice": 12.99,
+          "specialInstructions": null
+        }
+      ],
+      "subtotal": 12.99,
+      "deliveryFee": 2.99,
+      "tax": 1.0392000000000001,
+      "total": 17.0192,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:29:03.215578",
+      "estimatedDeliveryTime": "2025-10-19T10:59:03.215634",
+      "deliveryAddress": "7965 Birch Way, Oakland, CA 94180",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    },
+    {
+      "id": "fbb9f64d-2b05-469e-9cbe-2a064c69fb9b",
+      "restaurantId": "1",
+      "restaurantName": "Pizza Palace",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "price": 14.99,
+          "quantity": 2,
+          "totalPrice": 29.98,
+          "specialInstructions": "I want spicy food"
+        }
+      ],
+      "subtotal": 29.98,
+      "deliveryFee": 2.99,
+      "tax": 2.3984,
+      "total": 35.3684,
+      "status": "preparing",
+      "createdAt": "2025-10-19T10:38:17.446906",
+      "estimatedDeliveryTime": "2025-10-19T11:08:17.446953",
+      "deliveryAddress": "9828 Pine Street, Hayward, CA 94187",
+      "specialInstructions": null,
+      "driverId": null,
+      "driverName": null,
+      "driverPhone": null,
+      "driverLatitude": null,
+      "driverLongitude": null,
+      "paymentMethod": "Visa ending in 1234",
+      "paymentStatus": "completed"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review_1",
+      "restaurantId": "1",
+      "orderId": "order_1",
+      "userId": "user_1",
+      "userName": "Alice Johnson",
+      "rating": 5,
+      "comment": "Amazing pizza! The crust was perfect and the ingredients were so fresh. Will definitely order again.",
+      "createdAt": "2024-10-10T20:15:00Z",
+      "helpful": 12,
+      "foodQuality": 5,
+      "deliverySpeed": 5,
+      "customerService": 5
+    },
+    {
+      "id": "review_2",
+      "restaurantId": "1",
+      "orderId": null,
+      "userId": "user_2",
+      "userName": "Bob Smith",
+      "rating": 4,
+      "comment": "Good pizza, but took a bit longer than expected. Still tasty though!",
+      "createdAt": "2024-10-09T19:45:00Z",
+      "helpful": 8,
+      "foodQuality": 4,
+      "deliverySpeed": 3,
+      "customerService": 4
+    },
+    {
+      "id": "review_3",
+      "restaurantId": "2",
+      "orderId": null,
+      "userId": "user_3",
+      "userName": "Carol Davis",
+      "rating": 4,
+      "comment": "Great burgers! The meat was cooked perfectly and the fries were crispy.",
+      "createdAt": "2024-10-08T20:30:00Z",
+      "helpful": 15,
+      "foodQuality": 5,
+      "deliverySpeed": 4,
+      "customerService": 4
+    },
+    {
+      "id": "review_4",
+      "restaurantId": "3",
+      "orderId": null,
+      "userId": "user_4",
+      "userName": "David Wilson",
+      "rating": 5,
+      "comment": "Best sushi in town! Super fresh fish and excellent presentation.",
+      "createdAt": "2024-10-07T21:00:00Z",
+      "helpful": 23,
+      "foodQuality": 5,
+      "deliverySpeed": 5,
+      "customerService": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "user_1",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "+1234567890",
+      "addresses": [
+        {
+          "id": "addr_1",
+          "label": "Home",
+          "address": "123 Customer St, City",
+          "latitude": 37.7649,
+          "longitude": -122.4094,
+          "isDefault": true
+        }
+      ],
+      "paymentMethods": [
+        {
+          "id": "pm_1",
+          "type": "credit_card",
+          "last4": "1234",
+          "brand": "visa",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "driver_001",
+      "name": "John Driver",
+      "phone": "+1234567890",
+      "vehicleType": "car",
+      "vehiclePlate": "ABC123",
+      "rating": 4.8,
+      "totalDeliveries": 156,
+      "isActive": true,
+      "currentLatitude": 37.7749,
+      "currentLongitude": -122.4194
+    },
+    {
+      "id": "driver_002",
+      "name": "Sarah Delivery",
+      "phone": "+1234567891",
+      "vehicleType": "bike",
+      "vehiclePlate": "BK456",
+      "rating": 4.9,
+      "totalDeliveries": 203,
+      "isActive": true,
+      "currentLatitude": 37.7849,
+      "currentLongitude": -122.4294
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Italian",
+      "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=200",
+      "description": "Authentic Italian cuisine"
+    },
+    {
+      "id": "2",
+      "name": "American",
+      "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=200",
+      "description": "Classic American dishes"
+    },
+    {
+      "id": "3",
+      "name": "Japanese",
+      "imageUrl": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=200",
+      "description": "Fresh Japanese cuisine"
+    },
+    {
+      "id": "4",
+      "name": "Cambodia",
+      "imageUrl": "https://images.unsplash.com/photo-1559314809-0f31657def5e?w=200",
+      "description": "Spicy and flavorful Cambodia food"
+    },
+    {
+      "id": "5",
+      "name": "Mediterranean",
+      "imageUrl": "https://images.unsplash.com/photo-1544961503-7ad532b6e1e1?w=200",
+      "description": "Healthy Mediterranean dishes"
+    }
+  ]
+}
