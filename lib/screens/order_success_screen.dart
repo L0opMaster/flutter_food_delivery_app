@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:food_app/providers/cart_provider.dart';
 import 'package:food_app/screens/location_picker_screen.dart';
 import 'package:food_app/screens/restaurant_list_screen.dart';
 import 'package:food_app/services/payment_service.dart';
 
 class OrderSuccessScreen extends StatefulWidget {
-  double totalPrice;
-  OrderSuccessScreen({super.key, required this.totalPrice});
+  final double totalPrice;
+  const OrderSuccessScreen({super.key, required this.totalPrice});
 
   @override
   State<OrderSuccessScreen> createState() => _OrderSuccessScreenState();

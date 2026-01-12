@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/screens/location_picker_screen.dart';
+
 import 'package:food_app/screens/restaurant_list_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
