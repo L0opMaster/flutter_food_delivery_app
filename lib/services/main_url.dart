@@ -1,3 +1,3 @@
 class MainUrl {
-  final String baseUrll = 'https://71d29e2d84e4.ngrok-free.app';
+  final String baseUrll = 'https://40d1a6abe2e4.ngrok-free.app';
 }
