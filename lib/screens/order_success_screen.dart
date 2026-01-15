@@ -48,7 +48,8 @@ class _OrderSuccessScreenState extends State<OrderSuccessScreen> {
               size: 120,
               shadows: [
                 BoxShadow(
-                  color: Color(0x08e069).withOpacity(0.72),
+                  // ignore: deprecated_member_use
+                  color: Color(0x0008e069).withOpacity(0.72),
                   offset: Offset(0, 0),
                   blurRadius: 5,
                   spreadRadius: 0,

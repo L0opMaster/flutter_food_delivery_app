@@ -154,6 +154,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
                         child: ElevatedButton.icon(
                           onPressed: () {
                             // CONFIRM LOCATION
+                            // ignore: avoid_print
                             print(_currentLatLng);
                           },
                           icon: const Icon(Icons.check),

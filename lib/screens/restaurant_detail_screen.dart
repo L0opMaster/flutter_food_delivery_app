@@ -7,6 +7,7 @@ import 'package:food_app/screens/menu_detial_item_screen.dart';
 import 'package:food_app/screens/restaurant_list_screen.dart';
 import 'package:food_app/screens/reviews_screen.dart';
 import 'package:food_app/services/fooditem_service.dart';
+import 'package:food_app/widgets/appbar_cart_icon.dart';
 
 /// =====================================================
 /// RESTAURANT DETAIL SCREEN
@@ -112,17 +113,7 @@ class _RestaurantDetailScreenState extends State<RestaurantDetailScreen>
       ),
 
       /// CART BUTTON
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.shopping_cart, size: 30),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const CartScreen()),
-            );
-          },
-        ),
-      ],
+      actions: [AppbarCartIcon(navigator: CartScreen())],
     );
   }
 

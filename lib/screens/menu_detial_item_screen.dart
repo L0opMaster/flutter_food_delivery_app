@@ -4,6 +4,7 @@ import 'package:food_app/models/restaurant.dart';
 import 'package:food_app/screens/cart_screen.dart';
 import 'package:food_app/screens/restaurant_detail_screen.dart';
 import 'package:food_app/services/payment_service.dart';
+import 'package:food_app/widgets/appbar_cart_icon.dart';
 
 /// =====================================================
 /// MENU SCREEN
@@ -235,15 +236,7 @@ class _DetailMenuState extends State<DetailMenu> {
         ),
       ),
       actions: [
-        IconButton(
-          icon: const Icon(Icons.shopping_cart, size: 30),
-          onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (_) => CartScreen(foodItem: widget.foodItem),
-            ),
-          ),
-        ),
+        AppbarCartIcon(navigator: CartScreen(foodItem: widget.foodItem)),
       ],
     );
   }

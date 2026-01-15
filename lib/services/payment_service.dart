@@ -12,14 +12,18 @@ class PaymentService {
   PaymentService._internal();
   static final PaymentService _instance = PaymentService._internal();
   factory PaymentService() => _instance;
-
+  // limitOrder
+  final int maxOrderQuantity = 5;
   // ----------------------------
   // ValueNotifier to update UI reactively
   // ----------------------------
   final ValueNotifier<List<CartProvider>> paymentnotifier = ValueNotifier([]);
-
-  // limitOrder
-  final int maxOrderQuantity = 5;
+  // -----------------------------------
+  // ValueNotifier to update noti add to cart count
+  final ValueNotifier<int> badge = ValueNotifier(0);
+  void clearBadge() {
+    badge.value = 0;
+  }
 
   // ----------------------------
   // Add Product
@@ -66,7 +70,8 @@ class PaymentService {
         ),
       );
     }
-
+    // Update Badge
+    badge.value += 1;
     // Update notifier
     paymentnotifier.value = currentItem;
     return true;

@@ -23,7 +23,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
     super.dispose();
   }
 
-  LatLng _deliveryLatLng = const LatLng(11.6693, 105.0670);
+  final LatLng _deliveryLatLng = const LatLng(11.6693, 105.0670);
 
   @override
   Widget build(BuildContext context) {
