@@ -11,6 +11,7 @@ class AppbarCartIcon extends StatefulWidget {
 
 class _AppbarCartIconState extends State<AppbarCartIcon> {
   final PaymentService paymentService = PaymentService();
+
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<int>(

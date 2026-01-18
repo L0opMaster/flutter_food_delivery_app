@@ -24,6 +24,7 @@ class MenuDetialFoodItemScreen extends StatefulWidget {
 }
 
 class _MenuScreenState extends State<MenuDetialFoodItemScreen> {
+  int clickAddCount = 0;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -153,17 +154,22 @@ class _MenuScreenState extends State<MenuDetialFoodItemScreen> {
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
       onPressed: () {
-        final paymentService = PaymentService();
-        final added = paymentService.addProduct(item, widget.restaurants);
-        if (!added) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'You can only order from one restaurant at a time.',
+        if (clickAddCount < 5) {
+          setState(() {
+            clickAddCount += 1;
+          });
+          final paymentService = PaymentService();
+          final added = paymentService.addProduct(item, widget.restaurants);
+          if (!added) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  'You can only order from one restaurant at a time.',
+                ),
+                duration: Duration(seconds: 2),
               ),
-              duration: Duration(seconds: 2),
-            ),
-          );
+            );
+          }
         }
       },
       child: const Text('Add', style: TextStyle(fontSize: 12)),
