@@ -154,25 +154,37 @@ class _MenuScreenState extends State<MenuDetialFoodItemScreen> {
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
       onPressed: () {
-        if (clickAddCount < 5) {
+        final paymentService = PaymentService();
+        if (paymentService.getQuantity(item.id) < 5) {
           setState(() {
-            clickAddCount += 1;
-          });
-          final paymentService = PaymentService();
-          final added = paymentService.addProduct(item, widget.restaurants);
-          if (!added) {
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  'You can only order from one restaurant at a time.',
+            final added = paymentService.addProduct(item, widget.restaurants);
+            if (!added) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    'You can only order from one restaurant at a time.',
+                  ),
+                  duration: Duration(seconds: 2),
                 ),
-                duration: Duration(seconds: 2),
+              );
+            }
+          });
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'You reach to mix item 5',
+                textAlign: TextAlign.center,
               ),
-            );
-          }
+            ),
+          );
         }
       },
-      child: const Text('Add', style: TextStyle(fontSize: 12)),
+      child: const Text(
+        'Add',
+        style: TextStyle(fontSize: 12),
+        textAlign: TextAlign.center,
+      ),
     );
   }
 }
